@@ -44,15 +44,15 @@
             align-items: center;
             justify-content: center;
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-            animation: fillProgress 2s ease-out;
+            animation: fillProgress 2s ease-out forwards;
         }
 
         @keyframes fillProgress {
             from {
-                background: conic-gradient(#0077B6 0%, #EAF0FA 0%);
+                background: conic-gradient(#bf8ae3 0%, #EAF0FA 0%);
             }
             to {
-                background: conic-gradient(#0077B6 84%, #EAF0FA 0%);
+                background: conic-gradient(#bf8ae3 84%, #EAF0FA 0%);
             }
         }
 
@@ -112,7 +112,7 @@
         </div>
 
         <div class="buttons">
-            <button class="button" onclick="location.href='index.html'">Go Back</button>
+            <button class="button" onclick="location.href='front.html'">Go Back</button>
             <button class="button" onclick="location.href='retry.html'">Retry</button>
         </div>
     </div>
