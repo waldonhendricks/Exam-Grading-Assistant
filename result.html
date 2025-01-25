@@ -9,16 +9,24 @@
             margin: 0;
             font-family: 'Arial', sans-serif;
             background-color: #EAF0FA; /* Light blue background */
+            background-image: url("bg.png");
+            background-size: cover;
+            background-position: center;
             color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+        .box {
+            background-color: rgba(244, 222, 252, 0.73); /* Light, semi-transparent white box */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
             text-align: center;
+            width: 400px;
+            max-width: 90%; /* Ensures the box is responsive */
         }
 
         .header {
@@ -45,6 +53,7 @@
             justify-content: center;
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
             animation: fillProgress 2s ease-out forwards;
+            margin: 0 auto; /* Center the progress circle */
         }
 
         @keyframes fillProgress {
@@ -60,7 +69,7 @@
             position: absolute;
             font-size: 2rem;
             font-weight: bold;
-            color: #4C2A4E;
+            color: #40165c; /* White text for better contrast */
         }
 
         .explanation {
@@ -74,6 +83,7 @@
             margin-top: 30px;
             display: flex;
             gap: 20px;
+            justify-content: center; /* Center the buttons */
         }
 
         .button {
@@ -99,7 +109,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="box">
         <div class="header">Results</div>
         <div class="sub-header">The following is the accuracy of your answers:</div>
 
@@ -113,7 +123,6 @@
 
         <div class="buttons">
             <button class="button" onclick="location.href='front.html'">Go Back</button>
-            <button class="button" onclick="location.href='retry.html'">Retry</button>
         </div>
     </div>
 </body>
